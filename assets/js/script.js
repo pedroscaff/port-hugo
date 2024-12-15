@@ -1,15 +1,15 @@
 (function ($) {
   'use strict';
   /*--------------------------------
-	 Start Preloader Animation
-	----------------------------------*/
+   Start Preloader Animation
+  ----------------------------------*/
   $(window).on('load', function () {
     $('.preloader').fadeOut(100);
   });
 
   /*--------------------------------
-			End Preloader Animation
-		----------------------------------*/
+      End Preloader Animation
+    ----------------------------------*/
 
   // -----------------------------
   //  Count Up
@@ -49,8 +49,8 @@
   $(window).on('scroll', counter);
 
   /*--------------------------------
-	 Start Smooth Scrolling
-	----------------------------------*/
+   Start Smooth Scrolling
+  ----------------------------------*/
   function smoothScroll() {
     // Select all links with hashes
     $('a[href*="#"]')
@@ -61,7 +61,7 @@
         // On-page links
         if (
           location.pathname.replace(/^\//, '') ==
-            this.pathname.replace(/^\//, '') &&
+          this.pathname.replace(/^\//, '') &&
           location.hostname == this.hostname
         ) {
           // Figure out element to scroll to
@@ -113,12 +113,12 @@
     smoothScroll();
   }
   /*--------------------------------
-			End Smooth Scrolling
-	----------------------------------*/
+      End Smooth Scrolling
+  ----------------------------------*/
 
   /*--------------------------------
-	 Start Header
-		----------------------------------*/
+   Start Header
+    ----------------------------------*/
   // Toggle Fullscreen Navigation
   $('#burger').on('click', function () {
     $('.fullscreen-nav-container').slideToggle(300);
@@ -127,12 +127,12 @@
     $('#burger').trigger('click');
   });
   /*--------------------------------
-		 End Header
-	----------------------------------*/
+     End Header
+  ----------------------------------*/
 
   /*--------------------------------
-	Start Menu
-	----------------------------------*/
+  Start Menu
+  ----------------------------------*/
 
   $('.menu-item').each(function () {
     const link = $(this).find('a').attr('href');
@@ -194,12 +194,12 @@
     $('.menu-slider').slideToggle(500);
   });
   /*--------------------------------
-			 End Menu
-	----------------------------------*/
+       End Menu
+  ----------------------------------*/
 
   /*--------------------------------
-			Start About Me
-	----------------------------------*/
+      Start About Me
+  ----------------------------------*/
   // Initializing Skillbar Animation
   $('.skill h2').waypoint({
     handler: function (direction) {
@@ -223,27 +223,27 @@
     offset: 'bottom-in-view'
   });
   /*--------------------------------
-			End About Me
-	----------------------------------*/
+      End About Me
+  ----------------------------------*/
 
   /*--------------------------------
-			 Start Portfolio
-	----------------------------------*/
+       Start Portfolio
+  ----------------------------------*/
 
   /*--------------------------------
-			 End Portfolio
-	----------------------------------*/
+       End Portfolio
+  ----------------------------------*/
 
   /*--------------------------------
-			 Start Testimonials
-	----------------------------------*/
+       Start Testimonials
+  ----------------------------------*/
   /*--------------------------------
-			End Testimonials
-	----------------------------------*/
+      End Testimonials
+  ----------------------------------*/
 
   /*--------------------------------
-			Start Code for Mobile Devices
-	----------------------------------*/
+      Start Code for Mobile Devices
+  ----------------------------------*/
   // Code for Opera Mini
   if (navigator.userAgent.indexOf('Opera Mini') != -1) {
     // Setting Fun Facts Value Immediately
@@ -299,12 +299,12 @@
     });
   }
   /*--------------------------------
-			End Code for Mobile Devices
-	----------------------------------*/
+      End Code for Mobile Devices
+  ----------------------------------*/
 
   /*--------------------------------
-			Others
-	----------------------------------*/
+      Others
+  ----------------------------------*/
   // Code for Internet Explorer
   if (
     navigator.appName == 'Microsoft Internet Explorer' ||
@@ -320,7 +320,7 @@
     $('.fullscreen-nav-holder').css('width', '100vw');
   }
   /*--------------------------------
-			Others
+      Others
   ----------------------------------*/
   $('#current-year').html(new Date().getFullYear());
 })(jQuery);
