@@ -158,7 +158,7 @@
 
   // Styling Menu on Scroll
   if (window.location.pathname === '/') {
-    $('.about-me').waypoint({
+    $('.videos').waypoint({
       handler: function (direction) {
         // Changing Menu background after leaving Header Section
         $('.menu-container').toggleClass('menu-normal');
