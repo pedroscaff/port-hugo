@@ -89,12 +89,8 @@ h1 {
 * {
   outline: none;
 }
-@font-face {
-    font-family: "IBMPlexSans";
-    src: url('/fonts/IBMPlexSans-Regular.woff2') format('woff2');
-}
 body {
-  font-family: 'IBMPlexSans', sans-serif;
+  font-family: 'Inter', sans-serif;
   height: 100%;
 }
 a {
@@ -328,7 +324,7 @@ p code {
   height: 100%;
   color: white;
   font-size: 30px;
-  font-family: 'IBMPlexSans', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 300;
   z-index: 10;
 }
@@ -341,7 +337,7 @@ p code {
     margin-top: 18px;
     text-decoration: none;
     color: white;
-    font-family: 'IBMPlexSans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 19px;
     font-weight: 500;
     border: 2px solid white;
@@ -450,7 +446,7 @@ label {
   display: none;
   z-index: 11;
   color: #fff;
-  font-family: 'IBMPlexSans', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -535,7 +531,7 @@ label {
   }
   a {
     color: white;
-    font-family: 'IBMPlexSans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
