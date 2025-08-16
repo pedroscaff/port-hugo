@@ -28,16 +28,7 @@
       >
         <div class="head-holder">
           <h1 class="introduction">{{ .title | markdownify | emojify }}</h1>
-          <div class="animated-text">
-            <strong class="cd-headline clip">
-              <span class="cd-words-wrapper">
-                {{ range $index, $elements:= .occupations }} {{ if eq $index 0
-                }}
-                <b class="is-visible">{{ . }}</b>{{ else }}<b>{{ . }}</b>{{ end
-                }} {{ end }}
-              </span>
-            </strong>
-          </div>
+          <h2 class="animated-text"><b>{{ .occupation }}</b></h2>
           {{ if .button.enable }} {{ with .button }}
           <a class="hireMe button" href="{{ .link }}">{{ .label }}</a>
           {{ end }} {{ end }}
