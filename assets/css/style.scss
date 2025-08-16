@@ -90,6 +90,7 @@ h1 {
   outline: none;
 }
 body {
+  background: #CED7ED;
   font-family: 'Inter', sans-serif;
   height: 100%;
 }
@@ -206,6 +207,7 @@ p code {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  color: #EDE4CE;
   position: relative;
   height: 100%;
   min-height: 420px;
@@ -801,7 +803,7 @@ label {
   }
 }
 .about-me {
-  background: #fff;
+  background: #CED7ED;
   padding: 70px 0px;
 }
 .about-me-text {
@@ -841,7 +843,7 @@ label {
 .experience,
 .skill {
   h2 {
-    color: #6f6f6f;
+    color: #EDE4CE;
     font-weight: 700;
     letter-spacing: 2px;
   }
@@ -944,9 +946,10 @@ ul.experience-chart {
 .portfolio,
 .videos,
 .blog {
-  background: #fff;
+  background: #CED7ED;
   h2 {
-    color: #6f6f6f;
+    // color: #6f6f6f;
+    color: #5D6679;
     text-align: center;
     font-weight: 700;
     letter-spacing: 4px;
@@ -1039,6 +1042,8 @@ ul.experience-chart {
   }
 }
 .footer {
+  // TODO: fix footer width
+  // background: #CED7ED;
   padding-top: 50px;
   padding-bottom: 70px;
   position: relative;
