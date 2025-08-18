@@ -316,7 +316,7 @@ var Grid = (function () {
           largesrc: $itemEl.data('largesrc'),
           title: $itemEl.data('title'),
           description: $(
-            `#description-${formatForUrl($itemEl.data('title'))}`
+            `#description-${formatForUrl($itemEl.data('id'))}`
           ).html(),
           buttontext: $itemEl.data('buttontext')
         };
