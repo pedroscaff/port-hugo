@@ -48,7 +48,7 @@
               {{ range .Site.Params.social }}
               <li>
                 <a href="{{ .link | safeURL }}"
-                  ><i class="fab {{ .icon }} fa-2x"></i
+                  ><i class="{{ .icon }} fa-2x"></i
                 ></a>
               </li>
               {{ end }}
