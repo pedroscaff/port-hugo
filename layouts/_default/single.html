@@ -1,14 +1,13 @@
 {{ define "main" }}
-  {{ partial "menu" . }}
+  {{if not .Page.Params.no_header}} {{ partial "menu" . }} {{end}}
 
   <div class="under-menu col-lg-8 col-md-10 col-12 mx-auto post-container">
     <h1>{{ .Title }}</h1>
-    <span class="date">Posted on: {{ .Date.Format "1/2/2006" }}</span>
     <img src="{{ .Params.image }}" alt="{{ .Title }}" />
     <div class="body">
       {{ .Content }}
     </div>
   </div>
 
-  {{ partial "footer" . }}
+  {{if not .Page.Params.no_header}} {{ partial "footer" . }} {{end}}
 {{ end }}
