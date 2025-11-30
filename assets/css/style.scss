@@ -945,6 +945,7 @@ ul.experience-chart {
 }
 .portfolio,
 .videos,
+.about-me,
 .blog {
   background: #CED7ED;
   h2 {
@@ -954,6 +955,11 @@ ul.experience-chart {
     font-weight: 700;
     letter-spacing: 4px;
     position: relative;
+  }
+}
+.about-me {
+  h2 {
+    text-align: left;
   }
 }
 .under-menu {
