@@ -712,6 +712,8 @@ label {
   position: fixed;
 }
 .mobile-menu-logo {
+  /* TOOD: remove display: none when aiko has logo */
+  display: none;
   img {
     height: 50px;
   }

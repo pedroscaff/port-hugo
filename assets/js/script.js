@@ -148,12 +148,13 @@
   });
 
   function toggleLogoImg(id) {
-    var img = document.getElementById(id).src;
-    if (img.indexOf('logo-dark.svg') != -1) {
-      document.getElementById(id).src = '/images/logo.svg';
-    } else {
-      document.getElementById(id).src = '/images/logo-dark.svg';
-    }
+    // TODO: reactivate when aiko send a logo
+    // var img = document.getElementById(id).src;
+    // if (img.indexOf('logo-dark.svg') != -1) {
+    //   document.getElementById(id).src = '/images/logo.svg';
+    // } else {
+    //   document.getElementById(id).src = '/images/logo-dark.svg';
+    // }
   }
 
   // Styling Menu on Scroll
