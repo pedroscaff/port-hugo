@@ -357,13 +357,13 @@ var Grid = (function () {
       }
     },
     open: function () {
-      setTimeout(
-        $.proxy(function () {
-          this.setHeights();
-          this.positionPreview();
-        }, this),
-        25
-      );
+      // setTimeout(
+      //   $.proxy(function () {
+      //     this.setHeights();
+      //     this.positionPreview();
+      //   }, this),
+      //   25
+      // );
     },
     close: function () {
       var self = this,
@@ -397,7 +397,7 @@ var Grid = (function () {
     },
     calcHeight: function () {
       var heightPreview =
-          winsize.height - this.$item.data('height') - marginExpanded,
+        winsize.height - this.$item.data('height') - marginExpanded,
         itemHeight = winsize.height;
 
       if (heightPreview < settings.minHeight) {
@@ -431,11 +431,11 @@ var Grid = (function () {
         previewOffsetT = this.$previewEl.offset().top - scrollExtra,
         scrollVal =
           this.height + this.$item.data('height') + marginExpanded <=
-          winsize.height
+            winsize.height
             ? position
             : this.height < winsize.height
-            ? previewOffsetT - (winsize.height - this.height)
-            : previewOffsetT;
+              ? previewOffsetT - (winsize.height - this.height)
+              : previewOffsetT;
 
       $body.animate({ scrollTop: scrollVal }, settings.speed);
     },
